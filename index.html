@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Styleguide/Dungeons & Dragons</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header id="header">
+        <a href="#" class="header-img">
+        <a class="active" href="#typography">Typography</a>
+        <a href="#buttons">Buttons</a>
+        <a href="#tables">Tables</a>
+        <a href="#messages">Messages</a>
+        <a href="#loadingindicator">Loading Indicator</a>
+        <a href="#panels">Panels</a>
+        <a href="#forms">Forms</a>
+    </header>
+      
+    <section>
+      <img src="/resources/background.jpg" id="background"/>
+      <a href="#typography" id="welcome">Welcome traveler!</a>
+    </section>
+
+    <div class="typography" id="typography">
+      <br>
+      <h4 style="border-bottom:4px solid #9d0a0e;">Typography:</h4>
+      <br>
+      <div class="headings">
+        <h1>Heading 1</h1>
+        <br>
+        <h2>Heading 2</h2>
+        <br>
+        <h3>Heading 3</h3>
+        <br>
+        <h4>Heading 4</h4>
+        <br>
+        <h5>Heading 5</h5>
+        <br>
+  
+        <h5>Paragraphs:<br></h5>
+        <br>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit eos ab
+          sunt saepe fugit voluptas eius, ad inventore blanditiis! Perferendis
+          minus esse obcaecati autem magnam qui itaque nemo rem neque?. Lorem
+          ipsum dolor sit amet consectetur, adipisicing elit. Eaque nisi officiis
+          amet fuga error hic perferendis doloremque culpa? Quaerat perspiciatis
+          at voluptates temporibus delectus et? At perspiciatis tempora facere
+          ipsum!. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Aliquam perspiciatis officiis incidunt asperiores expedita optio? Quae
+          incidunt placeat voluptatum tenetur quo? Nisi deleniti corrupti dolore
+          maiores amet sunt numquam! Sapiente.<br /><br />Lorem ipsum dolor sit
+          amet consectetur, adipisicing elit. Impedit eos ab sunt saepe fugit
+          voluptas eius, ad inventore blanditiis! Perferendis minus esse obcaecati
+          autem magnam qui itaque nemo rem neque?. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Eaque nisi officiis amet fuga error hic
+          perferendis doloremque culpa? Quaerat perspiciatis at voluptates
+          temporibus delectus et? At perspiciatis tempora facere ipsum!. Lorem,
+          ipsum dolor sit amet consectetur adipisicing elit. Aliquam perspiciatis
+          officiis incidunt asperiores expedita optio? Quae incidunt placeat
+          voluptatum tenetur quo? Nisi deleniti corrupti dolore maiores amet sunt
+          numquam! Sapiente.<br />
+        </p>
+      </div>
+      
+
+    </div>
+
+    <div class="buttons" id="buttons">
+      <br>
+
+      <h5 style="border-bottom:4px solid #9d0a0e;">Buttons:</h5>
+      <br>
+
+      <button class="button buttonStandard">This is a standard button</button>
+      <br>
+      <button class="button buttonPositive" type="button">This is a positive button</button>
+      <br>
+      <button class="button buttonNegative" type="button">This is a negative button</button>
+      <br>
+      <button class="button buttonFunctional" type="button">This is a functional button</button>
+    </div>
+    <br>
+
+    <div class="tables" id="tables">
+      <br>
+
+      <h5 style="border-bottom:4px solid #9d0a0e;">Tables:</h5>
+      <br/>
+
+      <b style="margin-top: 20px;">Wide table</b>
+      <div class="wideTable" style="overflow-x: auto;">
+        
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Race</th>
+            <th>Level</th>
+            <th>Alignment</th>
+            <th>Age</th>
+            <th>background</th>
+          </tr>
+
+          <tr>
+            <td>Leowin</td>
+            <td>Rogue</td>
+            <td>Half-elf</td>
+            <td>3</td>
+            <td>Chaotic neutral</td>
+            <td>30</td>
+            <td>Sailor</td>
+          </tr>
+
+          <tr>
+            <td>Zed</td>
+            <td>Monk</td>
+            <td>Human</td>
+            <td>1</td>
+            <td>Lawful good</td>
+            <td>21</td>
+            <td>Outlander</td>
+          </tr>
+        </table>
+      </div>
+      <br>
+
+      <b>Long table</b>
+      <div class="longTable">
+        <table>
+          <tr>
+            <th>Item name</th>
+          </tr>
+
+          <tr>
+            <td>Enchanted staff</td>
+          </tr>
+          <tr>
+            <td>Enchanted staff</td>
+          </tr>
+          <tr>
+            <td>Enchanted staff</td>
+          </tr>
+          <tr>
+            <td>Enchanted staff</td>
+          </tr>
+          <tr>
+            <td>Enchanted staff</td>
+          </tr>
+          <tr>
+            <td>Enchanted staff</td>
+          </tr>
+          <tr>
+            <td>Enchanted staff</td>
+          </tr>
+          <tr>
+            <td>Enchanted staff</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br>
+
+    <div class="messages" id="messages">
+      <br>
+
+      <h5 style="border-bottom:4px solid #9d0a0e;">Messages/Warnings:</h5>
+      <br>
+
+      <div class="alertNegative">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Alert!</strong> This is a negative message
+      </div>
+      <br>
+
+      <div class="alertPositive">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Alert!</strong> This is a positive message
+      </div>
+      <br>
+
+      <div class="alertStandard">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Alert!</strong> This is a standard message
+      </div>
+      <br>
+
+      <div class="alertFunctional">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Alert!</strong> This is a functional message
+        <br>
+      </div>
+      <br>
+      
+    </div>
+
+    <div class="loadingindicator" id="loadingindicator">
+      <br>
+
+      <h5 style="border-bottom:4px solid #9d0a0e;">Loading indicator:</h5>
+      <br>
+
+      <div class="loading">
+        <img src="resources/d20.png" style="height: 100%" width="90%">
+      </div>
+
+
+
+
+    </div>
+
+    <div class="panels" id="panels">
+      <br>
+      <h5 style="border-bottom:4px solid #9d0a0e;">Panels:</h5>
+
+      <div class="panelPositive">This is a positive panel</div>
+
+      <div class="panelNegative">This is a negative panel</div>
+
+      <div class="panelInformative">This is a informative panel</div>
+
+
+    </div>
+
+    <div class="forms" id="forms">
+      <br>
+      <h5 style="border-bottom:4px solid #9d0a0e;">Forms:</h5>
+      <br>
+      <div>
+        <form>
+          <h5 style="padding-bottom: 20px;">Register Form</h5>
+          <div class="input-container">
+            <i class="user-icon"></i>
+            <input class="input-field" type="text" placeholder="Username">
+          </div>
+  
+          <div class="input-container">
+            <i class="email-icon"></i>
+            <input class="input-field" type="text" placeholder="Email">
+          </div>
+  
+          <div class="input-container">
+            <i class="password-icon"></i>
+            <input class="input-field" type="text" placeholder="Password">
+          </div>
+  
+          <button type="submit" class="buttonStandard">Register Account</button>
+        </form>
+      </div>
+      <br>
+
+      <div>
+        <h5 style="margin: 20px;">Radio form</h5>
+        <p style="margin: 20px;">Choose your favorite monster:</p>
+
+        <form>
+          <label>
+            <input type="radio" id="dragon" name="fav_monster" value="Dragpon" checked>
+            <img src="resources/spiked-dragon-head.svg" style="max-height: 60px;">
+          </label>
+          <b style="position: relative; bottom: 20px;">Dragon</b>
+          <br>
+
+          <label>
+            <input type="radio" id="dragon" name="fav_monster" value="Dragpon" checked>
+            <img src="resources/medusa-head.svg" style="max-height: 60px;">
+          </label>
+          <b style="position: relative; bottom: 20px;">Medusa</b>
+          <br>
+
+          <label>
+            <input type="radio" id="ghost" name="fav_monster" value="Ghost" checked>
+            <img src="resources/ghost.svg" style="max-height: 60px;">
+          </label>
+          <b style="position: relative; bottom: 20px;">Ghost</b>
+          <br>
+        </form>
+      </div>
+      
+
+
+    </div>
+    <div class="page-end">
+
+    </div>
+
+    <footer>
+      <div class="back-to-top">
+        <a href="#">Back to top</a>
+      </div>
+      
+    </footer>
+
+
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>
