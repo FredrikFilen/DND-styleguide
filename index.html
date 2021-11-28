@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css" />
     <title>My Styleguide/Dungeons & Dragons</title>
-
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -19,6 +18,7 @@
         <a href="#loadingindicator">Loading Indicator</a>
         <a href="#panels">Panels</a>
         <a href="#forms">Forms</a>
+        <a href="#navigation">Navigation</a>
     </header>
       
     <section>
@@ -30,6 +30,12 @@
       <br>
       <h4 style="border-bottom:4px solid #9d0a0e;">Typography:</h4>
       <br>
+
+      <p>This section gives examples on how headings and paragraphs should look.
+        Simple and clear with the Open Sans font. Headings should always be in uppercase.
+      </p>
+      <br>
+
       <div class="headings">
         <h1>Heading 1</h1>
         <br>
@@ -73,9 +79,11 @@
 
     <div class="buttons" id="buttons">
       <br>
-
       <h5 style="border-bottom:4px solid #9d0a0e;">Buttons:</h5>
       <br>
+
+      <p>This section shows examples of different buttons and their stylistical differences to be
+        informative in different scenarios. Try to implement accordingly. </p>
 
       <button class="button buttonStandard">This is a standard button</button>
       <br>
@@ -93,10 +101,15 @@
       <h5 style="border-bottom:4px solid #9d0a0e;">Tables:</h5>
       <br/>
 
+      <p>This section shows examples of a wide table and a longer table. The wide table has the feature of being 
+        responsive and displaying a scrollbar if the device or page would require it to fit all rows and tabs.
+      </p>
+      <br>
+
       <b style="margin-top: 20px;">Wide table</b>
       <div class="wideTable" style="overflow-x: auto;">
         
-        <table>
+        <table class="tableWide">
           <tr>
             <th>Name</th>
             <th>Class</th>
@@ -112,7 +125,7 @@
             <td>Rogue</td>
             <td>Half-elf</td>
             <td>3</td>
-            <td>Chaotic neutral</td>
+            <td>Lawful neutral</td>
             <td>30</td>
             <td>Sailor</td>
           </tr>
@@ -126,6 +139,16 @@
             <td>21</td>
             <td>Outlander</td>
           </tr>
+
+          <tr>
+            <td>Sanjay</td>
+            <td>Sorcerer</td>
+            <td>Half-orc</td>
+            <td>5</td>
+            <td>Chaotic evil</td>
+            <td>46</td>
+            <td>Criminal</td>
+          </tr>
         </table>
       </div>
       <br>
@@ -138,28 +161,28 @@
           </tr>
 
           <tr>
-            <td>Enchanted staff</td>
+            <td>Wand of orcus</td>
           </tr>
           <tr>
-            <td>Enchanted staff</td>
+            <td>Orb of dragonkind</td>
           </tr>
           <tr>
-            <td>Enchanted staff</td>
+            <td>Axe of the dwarvish lords</td>
           </tr>
           <tr>
-            <td>Enchanted staff</td>
+            <td>Well of many worlds</td>
           </tr>
           <tr>
-            <td>Enchanted staff</td>
+            <td>Ring of invisibility</td>
           </tr>
           <tr>
-            <td>Enchanted staff</td>
+            <td>Moonblade</td>
           </tr>
           <tr>
-            <td>Enchanted staff</td>
+            <td>Blackrazor</td>
           </tr>
           <tr>
-            <td>Enchanted staff</td>
+            <td>Crystal ball</td>
           </tr>
         </table>
       </div>
@@ -170,6 +193,11 @@
       <br>
 
       <h5 style="border-bottom:4px solid #9d0a0e;">Messages/Warnings:</h5>
+      <br>
+
+      <p>This sections shows examples of different messages. The message style should be used accordingly to it's content.
+        The messages can be closed by pressing the "X" to the right.
+      </p>
       <br>
 
       <div class="alertNegative">
@@ -205,6 +233,11 @@
       <h5 style="border-bottom:4px solid #9d0a0e;">Loading indicator:</h5>
       <br>
 
+      <p>This is an example of a loading indicator. This should be used as a placeholder while content is loading.
+        Or simply to show the users that something is loading. Can be implemented in different sizes if it fits the content better.
+      </p>
+      <br>
+
       <div class="loading">
         <img src="resources/d20.png" style="height: 100%" width="90%">
       </div>
@@ -217,6 +250,12 @@
     <div class="panels" id="panels">
       <br>
       <h5 style="border-bottom:4px solid #9d0a0e;">Panels:</h5>
+      <br>
+
+      <p>This section shows different examples of informative panels. Use these to inform the user of
+        different actions and information. These cannot be closed by the user.
+      </p>
+      <br>
 
       <div class="panelPositive">This is a positive panel</div>
 
@@ -231,6 +270,10 @@
       <br>
       <h5 style="border-bottom:4px solid #9d0a0e;">Forms:</h5>
       <br>
+
+      <p>This section show examples of forms. A registration form and a multiple choice radio form. When possible
+        use illustrative art to create a representative graphical profile that provides immersion. Keep in mind the style of the buttons in the form.
+      </p>
       <div>
         <form>
           <h5 style="padding-bottom: 20px;">Register Form</h5>
@@ -249,7 +292,7 @@
             <input class="input-field" type="text" placeholder="Password">
           </div>
   
-          <button type="submit" class="buttonStandard">Register Account</button>
+          <button type="submit" class="buttonStandard" style="font-weight: 700;">Register Account</button>
         </form>
       </div>
       <br>
@@ -281,9 +324,18 @@
           <br>
         </form>
       </div>
-      
+    </div>
 
+    <div class="navigation" id="navigation">
+      <br>
+      <h5 style="border-bottom:4px solid #9d0a0e;">Navigation</h5>
+      <br>
 
+      <p>For a navigation example, note the page's header navigation bar. It serves as an example of 
+        how similar elements can be implemented on different pages. It scrolls with the page to always be available.<br>
+        Note the "Welcome adventurer" button at the start. An welcoming message that also acts as a navigational button to the typography section.<br>
+        Also note the "Back to top" button at the bottom at the page. Navigation should be simple and intuitive.
+      </p>
     </div>
     <div class="page-end">
 

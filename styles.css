@@ -21,8 +21,8 @@ header a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 550;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -290,6 +290,8 @@ p {
 .tables {
   padding: 100px;
   margin: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.2rem;
 }
 
 .wideTable {
@@ -303,13 +305,16 @@ p {
 
 td,
 th {
-  border: 1px solid #dddddd;
+  border: 2px solid #6b1414;
   text-align: left;
   padding: 8px;
+  color: #000000;
+  
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #5a5a5a81;
+  
 }
 
 .panels {
@@ -357,7 +362,7 @@ form {
 }
 
 .email-icon {
-  background-image: url(/resources/dragon-head.svg);
+  background-image: url(/resources/raven.svg);
   background-repeat: no-repeat;
   color: white;
   min-width: 50px;
@@ -402,6 +407,10 @@ form {
 /* CHECKED STYLES */
 [type="radio"]:checked + img {
   outline: 2px solid #9d0a0e;
+}
+
+.navigation{
+  padding: 100px;
 }
 
 .page-end {
